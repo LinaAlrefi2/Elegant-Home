@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+body {
+    background-color: #F8EDE3;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+div{
+    color: gold;
+}
+html::-webkit-scrollbar-track {
+    background: #eae0dc;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #b58d7e;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+/* start header */
+
+
+
+
+/* home kitchen ...... */
+
+.header .head {
+    display: flex;
+    align-items: center;
+    font-size:1.5rem ;
+	padding:10px 20px ;
+	font-weight:500 ;
+	color: #5e473e;
+   
+   }
+
+/*end header */
+
+
+/* ---- product section ---- */
+.products .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(26rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    background-color: #f0e8e4;
+}
+.title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: 0.1rem solid #5e473e;
+    padding-bottom: 1.5rem;
+    margin-top: 6.9em;
+
+}
+
+.title span {
+    font-size: 2.5rem;
+    color: #5e473e;
+}
+
+.title a {
+    font-size: 1.5rem;
+    color: #b58d7e;
+}
+
+.title a:hover {
+    transform: translateX(-3px);
+    color: #9e7464;
+}
+
+.products .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(26rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 2.1rem;
+    padding: 2.1rem;
+    border-radius: 5rem;
+    background-color: #f0e8e4;
+}
+
+.products .box-container .box {
+    position: relative;
+    background: #f5eeeb;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 0.1rem solid #caab9f;
+}
+
+
+.products .box-container .box:hover .image img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+.products .box-container .box:hover .icons {
+    top: 0;
+}
+
+.products .box-container .box .icons {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 35rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 5rem;
+    background: rgba(242, 242, 242, 0.7);
+    z-index: 10;
+}
+
+.products .box-container .box .icons a {
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+    width: 5rem;
+    background: #e1cec7;
+    color: #5e473e;
+    border-radius: 100%;
+    font-size: 2rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.products .box-container .box .icons a:hover {
+    background: #5e473e;
+    color: #e1cec7;
+}
+
+
+.products .box-container .box .image {
+    height: 200ox;
+    width: 319px;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img {
+    height: 25%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.products .box-container .box .content {
+    padding: 1.5rem 1.5rem;
+}
+
+.products .box-container .box .content .price {
+    font-size: 1.7rem;
+    color: #b58d7e;
+}
+
+.products .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #5e473e;
+    padding: .5rem 0;
+}
+
+.products .box-container .box .content .stars {
+    font-size: 1.7rem;
+}
+
+.products .box-container .box .content .stars i {
+    color: gold;
+}
+
+.products .box-container .box .content .stars span {
+    color: #b58d7e;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    background : linear-gradient(135deg, #b58d7e, #845f51);
+    color: #faf7f6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #b58d7e, #845f51);
+}
+/* footer start */
+
+.credit {
+     display: flex;
+     justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #5e473e;
+    background: #f0e8e4;
+    margin: 2%;
+    border-radius: 3rem;
+}
+
+.credit .search-form {
+    height: 5rem;
+    width: 50rem;
+    border-radius: .75rem;
+    background-color: transparent;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #f0e8e4;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 0.1rem solid #caab9f;
+
+}
+
+.credit .search-form input {
+    height: 100%;
+    width: 100%;
+    padding: 0 1.2rem;
+    font-size: 1.6rem;
+    color: #5e473e;
+    text-transform: none;
+    background: transparent;
+}
+
+.credit .search-form input::placeholder {
+    color: #5e473e;
+}
+
+.credit .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.7rem;
+    cursor: pointer;
+    color: #5e473e;
+}
+
+.credit .search-form label:hover {
+    color: #9e7464;
+}
+
+/* footer */
+.footer {
+    margin: 2%;
+    border-radius: 3rem;
+    background: #f0e8e4;
+    flex-direction: column;/**/
+}
+
+.footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1rem;/**/
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #5e473e;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.6rem;
+    color: #b58d7e;
+    padding: 1rem;
+}
+
+.footer .box-container .box a{
+    font-size: 1.4rem;
+    color: #5e473e;
+    padding: 1rem 0;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.footer .box-container .box a:hover {
+    color: #9e7464;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: #5e473e;
+    font-size: 1.7rem;
+}
+
+.footer .box-container .box form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #5e473e;
+    text-transform: none;
+    margin: .7rem 0;
+    background: transparent;
+    border-radius: .75rem;
+    border: 0.1rem solid #caab9f;
+}
+
+.footer .box-container .box form input[type="email"]::placeholder {
+    color: #5e473e;
+}
+/* footer end */
+
+/* css different pages prouduct */
+
+.pargraph img{
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5e473e;
+     float:left ;
+    padding-right: 10px;
+}
+ h1 {
+    display:inline;
+    font-weight: bold;
+    font-size: 20px; 
+    color: #5e473e;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+
+}
+
+
+
+span{
+  color: #5e473e;  
+}
+.table {
+    
+    display:inline-table;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5e473e;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background :#F8EDE3 ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+
+   nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+  }
+   nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+  }
+   nav ul li a{
+    text-decoration: none;
+    color: #83596F;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.1s;
+  }
+  
+  nav ul li :hover{
+      color:#83596F;
+      font-weight: bold;
+  }
+   nav ul li :hover{
+    color: #83596F;
+  }
+
+
+  .logo img {
+  	width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+/*footer*/
+footer {
+    max-width: 1200px;
+    padding: 0;
+    background: #F8EDE3;
+    margin: 0;
+}
+
+footer .footer_main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .footer_main .footer_tag{
+	text-align: center;
+}
+footer .footer_main .footer_tag h2{
+	color:#000;
+	margin-bottom: 25px;
+	font-size: 30px;
+
+}
+footer .footer_main .footer_tag p{
+	margin: 0px;
+}
+
+
+/*Team*/
+.team{
+	width: 100%;
+	height: 90vh;
+}
+.team .team_box{
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: 13%;
+}
+.team .team_box .profile{
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+	margin: 0 15px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	transition: 0.4s;
+}
+.team .team_box  :hover{
+	border-radius: 20px;	
+}
+
+.team .team_box .profile img{
+	width: 150px;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 100%;
+	cursor: pointer;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	transition: 0.4s;
+	position: center;
+
+}
+.team .team_box .profile:hover img{
+	border-radius: 20px;
+	margin-top: -230px;
+}
+.team .team_box .profile .info{
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+	top: 60%;
+	
+}
+
+.team .team_box .profile .info .name{
+	color: #B8C4CF;
+	margin-bottom: 15px;
+
+}
+
+.team .team_box .profile .info .bio{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto 10px auto;
+}
+.tel{
+	text-decoration: none;
+	color: black;
+} 
+.tel:hover{
+	color: #83596F;
+	text-decoration: underline;
+}
+.ln{
+	text-decoration: none;
+	color: black;
+}
+.ln:hover{
+	text-decoration: underline;
+	color: #83596F;
+}
+
+/* end css bedroom and kidroom */

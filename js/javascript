@@ -1,0 +1,19 @@
+function redirectToProductPage(product) {
+    switch (product) {
+      case 'distinctive':
+        window.location.href = 'file:///C:/Users/USER/OneDrive/%D8%B3%D8%B7%D8%AD%20%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8/IA%20project/Distinctive%20living%20room%20set.html';
+        break;
+      case '4piece':
+        window.location.href = '4piece_product_page.html';
+        break;
+      case 'triple':
+        window.location.href = 'triple_product_page.html';
+        break;
+      default:
+        break;
+    }
+  }
+  
+  function showAvailabilityNotice() {
+    alert('This product is currently unavailable.');
+  }
